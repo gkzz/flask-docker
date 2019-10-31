@@ -1,7 +1,9 @@
 # flask-uwsgi-nginx
 
-https://pythonise.com/feed/flask/building-a-flask-app-with-docker-compose
-https://tech-k-labs.xyz/post/docker-compose-flask/
+Based on
+- [https://pythonise.com/feed/flask/building-a-flask-app-with-docker-compose](https://pythonise.com/feed/flask/building-a-flask-app-with-docker-compose)
+
+- [https://tech-k-labs.xyz/post/docker-compose-flask](https://tech-k-labs.xyz/post/docker-compose-flask/)
 
 
 ## TL;DR
