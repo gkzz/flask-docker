@@ -9,5 +9,5 @@ do
   else
     echo "Got $STATUS :( Not done yet..."
   fi
-  sleep 10
+  sleep 5
 done
