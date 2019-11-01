@@ -33,7 +33,7 @@ ubuntu@hostname ~/flask-docker (master) $ docker-compose up -d --build
 
 ## Usage
 
-
+prepared.
 
 ## Notes
 
