@@ -8,7 +8,6 @@ Based on
 
 ## TL;DR
 
-- Build a Jenkins container as `master cluster`
 ```
 ubuntu@hostname ~/flask-docker (master) $ git clone git@github.com:gkzz/flask-docker.git
 ubuntu@hostname ~/flask-docker (master) $ docker-compose up -d --build
@@ -64,7 +63,4 @@ ubuntu@hostname ~/flask-docker (master) $ tree -L 3 -I *.pyc
 
 ## FAQ
 
-[This page may help you to solve your problems](docs/x_faq/tutorial.md)
-
-e.g. Cannot acccess Jenkins runnning on ec2-instance
 
