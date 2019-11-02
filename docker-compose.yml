@@ -15,11 +15,12 @@ services:
       - 8080
 
   nginx:
-    build: ./nginx
+    build: 
+      context: ./nginx
+      args:
+        - DOCKER_HOST=${DOCKER_HOST}
     container_name: nginx
     hostname: nginx
     restart: always
     ports:
       - "80:80"
-    args:
-      - DOCKER_HOST=${DOCKER_HOST}
