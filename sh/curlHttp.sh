@@ -9,5 +9,5 @@ do
   else
     echo "HTTP STATUS: $STATUS :( Not done yet..."
   fi
-  sleep 7
+  sleep 10
 done
