@@ -18,11 +18,6 @@ ubuntu@hostname ~/flask-docker (master) $ . sh/curlHttp.sh
 ## Table of Contents
 
 - Technologies Used
- - Flask==1.1.1
- - Jinja2==2.10.3
- - request==2019.4.13
- - uWSGI==2.0.18
-
 
 - FAQ
  - How to `remove all containers, images, and volumes` to rebuild the containers of flask/nginx
@@ -36,6 +31,10 @@ ubuntu@hostname ~/flask-docker (master) $ . sh/curlHttp.sh
 - docker-compose 1.24.1
 - AWS (EC2, VPC, EIP, etc)
   - Ubuntu 18.04.3 LTS
+- Flask==1.1.1
+- Jinja2==2.10.3
+- request==2019.4.13
+- uWSGI==2.0.18
 
 
 ## Usage
