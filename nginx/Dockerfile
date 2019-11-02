@@ -6,4 +6,8 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 # Replace with our own nginx.conf
 COPY nginx.conf /etc/nginx/conf.d/
+RUN sed -i -e \
+    's|#server_name  ${REMOTE_IP};|server_name  "'${REMOTE_IP}'";' \
+    /etc/nginx/conf.d/nginx.conf
+
 COPY sorry.html /usr/share/nginx/html/

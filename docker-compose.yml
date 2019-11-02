@@ -21,3 +21,5 @@ services:
     restart: always
     ports:
       - "80:80"
+    env_file:
+      nginx/secret.env
