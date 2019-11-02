@@ -18,13 +18,8 @@ ubuntu@hostname ~/flask-docker (master) $ . sh/curlHttp.sh
 ## Table of Contents
 
 - Technologies Used
-
+- Notes
 - FAQ
- - How to `remove all containers, images, and volumes` to rebuild the containers of flask/nginx
-   All you have to do is just to run sh/setup.sh
-   ```
-   ubuntu@hostname ~/flask-docker (master) $ . sh/setup.sh
-   ```
 
 ## Technologies Used
 - Docker 19.03.4
@@ -36,10 +31,6 @@ ubuntu@hostname ~/flask-docker (master) $ . sh/curlHttp.sh
 - request==2019.4.13
 - uWSGI==2.0.18
 
-
-## Usage
-
-prepared.
 
 ## Notes
 
@@ -71,5 +62,11 @@ ubuntu@hostname ~/flask-docker (master) $ tree -L 3 -I *.pyc
 ```
 
 ## FAQ
+
+ - How to `remove all containers, images, and volumes` to rebuild the containers of flask/nginx
+   All you have to do is just to run sh/setup.sh
+   ```
+   ubuntu@hostname ~/flask-docker (master) $ . sh/setup.sh
+   ```
 
 
