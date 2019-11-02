@@ -46,7 +46,6 @@ prepared.
 ```
 ubuntu@hostname ~/flask-docker (master) $ tree -L 3 -I *.pyc
 .
-├── curlHttp.sh
 ├── docker-compose.yml
 ├── flask
 │   ├── app
@@ -63,9 +62,11 @@ ubuntu@hostname ~/flask-docker (master) $ tree -L 3 -I *.pyc
 │   ├── nginx.conf
 │   └── sorry.html
 ├── README.md
-└── setup.sh
+└── sh
+    ├── curlHttp.sh
+    └── setup.sh
 
-4 directories, 14 files
+5 directories, 14 files
 
 ```
 
