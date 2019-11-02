@@ -11,18 +11,25 @@ Based on
 ```
 ubuntu@hostname ~/flask-docker (master) $ git clone git@github.com:gkzz/flask-docker.git
 ubuntu@hostname ~/flask-docker (master) $ docker-compose up -d --build
+ubuntu@hostname ~/flask-docker (master) $ . sh/curlHttp.sh
 ```
 
 
 ## Table of Contents
 
 - Technologies Used
-- Usage
-
+ - Flask==1.1.1
+ - Jinja2==2.10.3
+ - request==2019.4.13
+ - uWSGI==2.0.18
 
 
 - FAQ
-
+ - How to `remove all containers, images, and volumes` to rebuild the containers of flask/nginx
+   All you have to do is just to run sh/setup.sh
+   ```
+   ubuntu@hostname ~/flask-docker (master) $ . sh/setup.sh
+   ```
 
 ## Technologies Used
 - Docker 19.03.4
