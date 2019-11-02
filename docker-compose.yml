@@ -21,3 +21,5 @@ services:
     restart: always
     ports:
       - "80:80"
+    args:
+      - DOCKER_HOST=${DOCKER_HOST}
