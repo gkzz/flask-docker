@@ -6,6 +6,9 @@ Based on
 - [https://tech-k-labs.xyz/post/docker-compose-flask](https://tech-k-labs.xyz/post/docker-compose-flask/)
 
 
+<img src="/docs/img/website.png" alt="website" style="max-width:5%;">
+
+
 ## TL;DR
 
 ```
