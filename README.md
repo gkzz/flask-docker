@@ -41,6 +41,9 @@ ubuntu@hostname ~/flask-docker (master) $ . sh/curlHttp.sh
 ubuntu@hostname ~/flask-docker (master) $ tree -L 3 -I *.pyc
 .
 ├── docker-compose.yml
+├── docs
+│   └── img
+│       └── website.png
 ├── flask
 │   ├── app
 │   │   ├── __init__.py
@@ -60,7 +63,7 @@ ubuntu@hostname ~/flask-docker (master) $ tree -L 3 -I *.pyc
     ├── curlHttp.sh
     └── setup.sh
 
-5 directories, 14 files
+7 directories, 15 files
 
 ```
 
