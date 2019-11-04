@@ -1,6 +1,7 @@
-language: python
-python:
-   - 3.7.2
+#language: python
+#python:
+#   - 3.7.2
+
 sudo: required
 
 services:
@@ -23,7 +24,7 @@ before_install:
 #before_script:
 
 script:
-  - bash sh/setup.sh
+  - bash sh/setup.sh -b
 
 #after_script:
 
