@@ -52,13 +52,12 @@ docker volume prune --force
 
 docker-compose down -v
 
-echo $BUILD_FLAG
-
 if [ "$BUILD_FLAG" -eq 1  ]; then
+  echo 'Run "docker-compose up -d --build"'
   docker-compose up -d --build
   bash sh/curlHttp.sh
 elif [ "$BUILD_FLAG" -eq 0 ]; then
-  :
+  echo 'Not Run "docker-compose up -d --build"'
 else
   echo "option is unexpected."
   help
