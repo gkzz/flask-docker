@@ -3,7 +3,7 @@
 function help {
   cat <<- EOF
     overview：wheter run "docker-compose up -d --build", or not
-    usage：tmp.sh [-h|-b|-n|
+    usage：bash sh/setup.sh [-h|-b|-n|
     option：
       -h  this message
       -b ->> run "docker-compose up -d --build", after removing all contrainers
