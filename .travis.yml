@@ -1,0 +1,30 @@
+language: python
+python:
+   - 3.7.2
+sudo: required
+
+services:
+  - docker
+
+env:
+  global:
+    - DOCKER_COMPOSE_VERSION=1.24.1
+
+before_install:
+    - sudo rm /usr/local/bin/docker-compose
+    - sudo apt-get update -y
+    - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+    - sudo chmod +x docker-compose
+    - sudo mv docker-compose /usr/local/bin
+    - docker-compose build
+
+#install:
+
+#before_script:
+
+script:
+  - bash sh/setup.sh
+
+#after_script:
+
+#notifications:
