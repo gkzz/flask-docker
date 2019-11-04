@@ -13,6 +13,8 @@ services:
       - FLASK_ENV=development
     expose:
       - 8080
+    depends_on:
+      - nginx
 
   nginx:
     build: ./nginx
