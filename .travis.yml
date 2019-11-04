@@ -1,31 +1,20 @@
-#language: python
-#python:
-#   - 3.7.2
-
 sudo: required
-
 services:
-  - docker
-
+- docker
 env:
   global:
-    - DOCKER_COMPOSE_VERSION=1.24.1
-
+  - DOCKER_COMPOSE_VERSION=1.24.1
 before_install:
-    - sudo rm /usr/local/bin/docker-compose
-    - sudo apt-get update -y
-    - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
-    - sudo chmod +x docker-compose
-    - sudo mv docker-compose /usr/local/bin
-    - docker-compose build
-
-#install:
-
-#before_script:
-
+- sudo rm /usr/local/bin/docker-compose
+- sudo apt-get update -y
+- curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname
+  -s`-`uname -m` > docker-compose
+- sudo chmod +x docker-compose
+- sudo mv docker-compose /usr/local/bin
+- docker-compose build
 script:
-  - bash sh/setup.sh -b
-
-#after_script:
-
-#notifications:
+- bash sh/setup.sh -b
+notifications:
+  slack:
+    rooms: #dev
+      - secure: MVZeDI6677TYPJk9IHkOuiVcGW3qHbjDOkh/qjtEqCiO4sQ+UiGzx33Zg0WOnsDApz71hKdTmS0PGQTq9UDmqk9TyQd6DzzYlT1BbQUeHnIqorCzUnJ6eiHzycxxphO6/yXqxR+fVg2IiGuHie/P5zGzCP1mViDG8k6otuT5rGIOaDpbVH8DtOwXirF8icoCtkoENeViRPdHxkPwiV+UmW6FyTYrXs1cp7BSKBZSQ785qZvaITYJ1zi8jnerpZsRxrXP8bo2sBuaWlrtY/p5HfJtKuYEmQcWWRqVTq/Qxlss8IC+q5lALUnOlOeBRkH4q2CAX0uLaa2ndOa6SQUi1z+ysgquhIUQEV7Yp5AmzonAiiF4wLAxsJxW+f4MKq93jpPEjduYNJnr7wObjL5ek34BP2bjXRwsXTToyRgqNtQHlbkN+3swobB4rPskEqeZX4E82c3i4u0oI5G7P1CfTZ1Ov2KpnoxzVJYZHh2DhRKCjFxbMhxc1YHXJCH0F42IgGqAYZpwPA3qiduT5h2hL7k0cSK/xhqjecTftnkW1/r4ZNL0HLJ9PmW7U9RWN7yTff4cwUy/+b74xMzKB2OVMYUxrJ/8dTHT8YWD6M/xcBbrDBbY9P2j0K8v4L9cXvpXG0go6nNhTNLgPHCEMe+beI6fruc9yaLwNc5Qkx5bD+Q=
