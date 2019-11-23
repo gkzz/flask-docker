@@ -7,20 +7,21 @@ import random
 
 h2 = "Seat Table"
 member = [
-    'alice',
-    'bob',
-    'charlie',
-    'david',
-    'eve',
-    'flank',
-    'grace',
-    'heidi',
-    'ivan',
-    'judy',
+    'Alice',
+    'Bob',
+    'Charlie',
+    'David',
+    'Eve',
+    'Flank',
+    'Grace',
+    'Heidi',
+    'Ivan',
+    'Judy',
     'Michael',
     'Niaj',
     'Olivia',
     'Peggy',
+    'Rupert',
 ]
 
 def set_contents(array):
