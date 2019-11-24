@@ -27,6 +27,7 @@ member = [
     'Victor',
     'Wendy',
     'Yoko',
+    'Zed',
 ]
 
 def set_contents(array):
