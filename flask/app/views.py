@@ -26,7 +26,7 @@ member = [
     'Ted',
     'Victor',
     'Wendy',
-    'Yoko',
+    #'Yoko',
     #'Zed',
 ]
 
